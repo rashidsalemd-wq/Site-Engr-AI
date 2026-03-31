@@ -59,7 +59,7 @@ if os.path.exists(FILE_NAME):
                     st.write(f"**مرجع {i+1}:** {doc.page_content[:300]}...")
 else:
     st.error(f"لم يتم العثور على ملف باسم `{FILE_NAME}` في المستودع. يرجى رفعه أو التأكد من الاسم.")
-        vectorstore = FAISS.from_documents(pages, embeddings)
+    vectorstore = FAISS.from_documents(pages, embeddings)
         
     query = st.text_input("اسأل عن أي معيار فني (مثلاً: مسافة الحفر، أنواع الكوابل):")
     
