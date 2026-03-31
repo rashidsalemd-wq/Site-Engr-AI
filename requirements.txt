@@ -4,3 +4,5 @@ langchain-community
 langchain-huggingface
 pypdf
 faiss-cpu
+sentence-transformers
+huggingface_hub
